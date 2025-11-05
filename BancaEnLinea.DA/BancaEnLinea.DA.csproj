@@ -11,4 +11,12 @@
     <ProjectReference Include="..\BancaEnLinea.BW\BancaEnLinea.BW.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Acciones\" />
+  </ItemGroup>
+
 </Project>

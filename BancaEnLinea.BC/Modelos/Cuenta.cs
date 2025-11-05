@@ -8,6 +8,7 @@ namespace BancaEnLinea.BC.Modelos
         public int IdCuenta { get; set; }
         public string Contrasena { get; set; }
         public Rol RolCuenta { get; set; }
+        public int IntentosFallidos { get; set; }
         public Cuenta()
         {
             IdCuenta = new int();

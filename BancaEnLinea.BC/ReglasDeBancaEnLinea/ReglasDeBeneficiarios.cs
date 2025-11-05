@@ -8,11 +8,16 @@ namespace BancaEnLinea.BC.ReglasDeBancaEnLinea
         public static bool elBeneficiarioEsValido(Beneficiarios beneficiario)
         {
             return beneficiario != null &&
+                beneficiario.IdBeneficiario > 0 &&
                 !string.IsNullOrEmpty(beneficiario.Alias) &&
                 !string.IsNullOrEmpty(beneficiario.Banco) &&
                 Enum.IsDefined(typeof(TipoMoneda), beneficiario.TipoMoneda) &&
                 beneficiario.NumeroCuenta > 99999999999 &&
                 !string.IsNullOrEmpty(beneficiario.Pais);
+        }
+        public static bool elIdBeneficiarioEsValido(int idBeneficiario)
+        {
+            return idBeneficiario > 0;
         }
     }
 }
